@@ -5,7 +5,7 @@ registerApplication({
   app: () => System.import("@micro/react-app"),
   activeWhen: (location) =>
     location.pathname.startsWith('/react-app') ||
-    location.pathname.startsWith('/'),
+    location.pathname === '/',
 });
 
 registerApplication({
@@ -13,7 +13,7 @@ registerApplication({
   app: () => System.import("@micro/vue-cli"),
   activeWhen: (location) =>
     location.pathname.startsWith('/vue-cli') ||
-    location.pathname.startsWith('/'),
+    location.pathname === '/',
 });
 
 registerApplication({
@@ -21,7 +21,7 @@ registerApplication({
   app: () => System.import('@micro/vite-vue'),
   activeWhen: (location) =>
     location.pathname.startsWith('/vite-vue') ||
-    location.pathname.startsWith('/'),
+    location.pathname === '/',
 });
 
 // add importmap

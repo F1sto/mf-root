@@ -22,8 +22,8 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@micro/vue-vite",
-  app: () => System.import('@micro/vue-vite'),
+  name: "@micro/vite-vue",
+  app: () => System.import('@micro/vite-vue'),
   activeWhen: (location) => location.pathname.startsWith('/vite-vue'),
 });
 
